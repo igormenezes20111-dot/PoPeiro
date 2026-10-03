@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Popeiro - Compartilhe seu sabor</title>
+
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>POPEIRO 🍲</h1>
+
+        <span id="usuarioLogado"></span>
+
+        <button id="botaoSair" style="display: none;">Sair</button>
+
+        <nav>
+            <ul>
+                <a href="#inicio">Início</a>
+                <a href="#receitasDestaque">Explorar</a>
+                <a href="#" id="PublicarReceita">Publicar Receita</a>
+                <a href="#" id="botaoEntrar">Entrar</a>
+            </ul>
+        </nav>
+        <input type="search" placeholder="Buscar Receita">
+    </header>
+
+ <main id="inicio">
+
+
+        <section>
+            <h2>Compartilhe seu sabor 🍴</h2>
+
+            <p>
+                Descubra receitas incríveis criadas por pessoas de todos os lugares.
+            </p>
+
+            <input type="text" id="campoPesquisa" placeholder="Pesquisar uma receita...">
+
+            <button id="botaoPesquisa">Pesquisar</button>
+
+            
+
+        </section>
+
+        <section id="receitasDestaque">
+            <h3>Receitas em Destaque</h3>
+            <div class="grade">
+                <div class="card">
+                    <img src="img/Tambaqui.jpeg" alt="Tambaqui assado">
+
+                    <h4>Tambaqui assado</h4>
+                    <p>por Maria</p>
+                   <p class="avaliacao">⭐ Ainda não avaliado</p>
+                   <button class="botaoAvaliar">Avaliar Receita</button>
+
+                    <button id="VerReceita">Ver Receita</button>
+                </div>
+                <div class="card">
+                    <img src="img/bife.jpeg" alt="Tambaqui assado">
+
+                    <h4>Bife acebolado</h4>
+                    <p>Fulano</p>
+                    <p class="avaliacao">⭐ Ainda não avaliado</p>
+                    <button class="botaoAvaliar">Avaliar Receita</button>
+                    <button>Igrediente</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <div id="fundoModal" style="display: none;">
+
+        <div id="receita" class="modal">
+
+            <h2 id="tituloModal">Receita de Tambaqui Assado</h2>
+
+            <p id="autorModal"></p>
+
+            
+            <h3>Ingredientes</h3>
+
+            <ul id="ingredientesModal">
+                <br>
+                <li>1 kg de tambaqui</li>
+                <li>2 limões</li>
+                <li>3 dentes de alho</li>
+                <li>Sal a gosto</li>
+                <li>Pimenta a gosto</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h3>Modo de Preparo</h3>
+            <br>
+            <p id="modoPreparoModal">
+                Tempere o tambaqui com limão, alho, sal e pimenta.
+                Deixe descansar por 20 minutos e depois leve ao forno
+                até ficar bem assado e dourado.
+            </p>
+
+        </div> <!-- fecha receita -->
+
+    </div> <!-- fecha fundoModal -->
+
+
+    <div id="areaPublicar" style="display: none;">
+
+        <h2>Publicar Receita</h2>
+
+        <button id="fecharPublicar">Fechar</button>
+
+        <label>Nome Da Receita</label>
+        <input type="text" id="nomeReceita">
+
+        <label>Ingredientes</label>
+        <textarea id="ingredientes"></textarea>
+
+        <label>Modo de Preparo</label>
+        <textarea id="modoPreparo"></textarea>
+
+        <label>Foto</label>
+        <input id="fotoReceita" type="file" name="file">
+
+        <button id="botaoPublicar">Publicar Receita</button>
+
+    </div>
+
+    <div id="areaLogin" style="display: none;">
+
+    <h2>Entrar no Popeiro</h2>
+
+    <label>Email</label>
+    <input type="email" id="emailLogin">
+
+    <label>Senha</label>
+    <input type="password" id="senhaLogin">
+
+    <button id="entrarLogin">Entrar</button>
+
+    <button id="botaoCadastro">Cadastre-se</button>
+
+    </div> <!-- fecha areaLogin -->
+
+    <div id="areaCadastro" style="display: none;">
+
+    <h2>Criar Conta</h2>
+
+    <label>Nome</label>
+    <input type="text" id="nomeCadastro">
+
+    <label>Email</label>
+    <input type="email" id="emailCadastro">
+
+    <label>Senha</label>
+    <input type="password" id="senhaCadastro">
+
+    <button id="criarConta">Criar Conta</button>
+
+</div>
+
+</div>
+
+    <script src="js/Script.js"></script>
+</body>
+
+</html>
