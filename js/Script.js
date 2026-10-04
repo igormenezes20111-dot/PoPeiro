@@ -44,7 +44,6 @@ publicarReceita.addEventListener("click", function (event) {
     areaPublicar.style.display = "block";
 
     areaLogin.style.display = "none";
-    
 
 });
 const botaoPublicar = document.getElementById("botaoPublicar");
